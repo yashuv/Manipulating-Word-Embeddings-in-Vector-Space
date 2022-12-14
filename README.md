@@ -48,15 +48,18 @@ Cosine similarity is a measure of similarity between two vectors that measures t
 Cosine similarity is a more effective metric than Euclidean distance for measuring similarity between vectors. This is because cosine similarity is less sensitive to the magnitude of the vectors, and is therefore more robust to changes in vector size. Additionally, cosine similarity is more effective at capturing the similarity between vectors that are close together in terms of angle (i.e. more similar).<br>
 However, in general, cosine similarity is more effective when working with high-dimensional data, while Euclidean distance is more effective when working with low-dimensional data.<br>
 *for eg*:  If you have two documents of very different sizes, then taking the Euclidean distance is not ideal. The cosine similarity used the angle between the documents and is thus not dependent on the size of the corpuses.<br>
-One of the issues with euclidean distance is that it is not always accurate and sometimes we are not looking for that type of similarity metric. *For example*, when comparing large documents to smaller ones with euclidean distance one could get an inaccurate result. Look at the diagram below:<br>
+One of the issues with euclidean distance is that it is not always accurate and sometimes we are not looking for that type of similarity metric. *For example*, when comparing large documents to smaller ones with euclidean distance one could get an inaccurate result. Look at the diagram below:
+
 <img src="images/Euclidean distance vs Cosine similarity.PNG">
 <img src="images/norm and dot product used in cosine similarity.PNG">
 <img src="images/cosine similarity.jpg">
+
 Hence, given two vectors, v and w the cosine similarity, cos(β) is defined as:
 
 $$ cosine\  similarity =\cos(\beta) = \frac{v \cdot w}{\left||v\right|| \left||w\right||}$$
 
 where ||v|| and ||w|| are the Euclidean norms of vectors v and w, and v · w is the dot product of vectors v and w. <br>Cosine similarity gives values between 0 and 1.
+
 <img src="images/cosine similarity between similar and dissimilar vector.JPG">
 
 # Manipulating Words in Vector Spaces
@@ -65,7 +68,8 @@ You can use word vector representations to manipulate words in vector spaces to 
 <a href="">Practice Manipulating Word Embeddings Here</a>
 
 # Visualization and PCA
-A way to reduce the very high dimensions of the vectors to two dimensions while preserving as much variance as possible is to use a technique called *Principal Component Analysis (PCA)*. PCA is a statistical procedure that finds the directions (components) that maximize the variance in a dataset. In other words, it identifies the underlying structure in the data. Once you have identified these components, you can represent the data in a lower-dimensional space.<br>
+A way to reduce the very high dimensions of the vectors to two dimensions while preserving as much variance as possible is to use a technique called *Principal Component Analysis (PCA)*. PCA is a statistical procedure that finds the directions (components) that maximize the variance in a dataset. In other words, it identifies the underlying structure in the data. Once you have identified these components, you can represent the data in a lower-dimensional space.
+
 Hence, PCA is a a *dimensionality reduction* technique to reduce the dimension of data while preserving relationships among vectors so that it can be visualized and represented more easily using the plot.
 * It's very helpful for visualizing your data to check if your representation is capturing relationships among words. *For example*, if you are using a 2D representation, are similar words close together in the space?
 * The benefits of dimensionality reduction are that it can make data easier to work with, and it can help improve the performance of machine learning algorithms.
@@ -78,7 +82,9 @@ Hence, PCA is a a *dimensionality reduction* technique to reduce the dimension o
 
 **Eigenvectors**: the directions along which the data varies the most. They are resulting vectors, also known as the *uncorrelated features* of your data.<br>
 **Eigenvalues**: the amount of variance in the data along those direction or the amount of information retained by each new feature. You can think of it as the variance in the eigenvector. 
+
 <img src="images/pca algorithm.JPG"/>
+
 The steps for computing PCA are:<br>
 1) Choose the number of components, k, that you want to keep.
 2) Calculate the covariance matrix of your data, X
@@ -86,7 +92,6 @@ The steps for computing PCA are:<br>
 4) Sort the eigenvectors by descending order of the eigenvalues
 5) Choose the first k eigenvectors
 6) Transform the data into a lower-dimensional space using these k eigenvectors
-
 
 ## Conclusion
 I learned how to create word vectors that capture dependencies between words, then visualize their relationships in two dimensions using PCA.<br>
