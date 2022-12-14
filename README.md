@@ -25,7 +25,8 @@ A vector space model is a mathematical model for representing text documents as 
 # Co-occurrence Matrix
 A co-occurrence matrix is a matrix that can be used to measure the similarity of two items based on how often they occur together. <br>
 In *word by word* design, the co-occurrence of two different words is the number of times that they appear in your corpus together within a certain word distance k. <br>
-For a *word by document* design, you will count the number of times the words from your vocabulary appear in documents corpora that belong to specific categories. You can represent the categories, as a vector v, and also compare categories as follows by doing a simple plot.<br>
+For a *word by document* design, you will count the number of times the words from your vocabulary appear in documents corpora that belong to specific categories. You can represent the categories, as a vector v, and also compare categories as follows by doing a simple plot.
+
 <img src="images/plot of comparison of categories in vector.jpg">
 
 # Euclidean Distance
@@ -41,6 +42,7 @@ In general, for *n-dimensional vectors*, the *Euclidean distance* is given as:<b
 From algebra, this formula is known as the *norm* of the difference between the vectors that you are comparing.
 
 <img src="images/Euclidean distance as norm of difference between 2 vectors from algebra.PNG">
+<br><br>
 
 # Cosine Similarity
 Cosine similarity is a measure of similarity between two vectors that measures the cosine of the angle between them. It is a popular metric for measuring similarity between two vectors.
