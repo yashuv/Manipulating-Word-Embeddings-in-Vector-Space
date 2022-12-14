@@ -42,7 +42,6 @@ In general, for *n-dimensional vectors*, the *Euclidean distance* is given as:<b
 From algebra, this formula is known as the *norm* of the difference between the vectors that you are comparing.
 
 <img src="images/Euclidean distance as norm of difference between 2 vectors from algebra.PNG">
-<br><br>
 
 # Cosine Similarity
 Cosine similarity is a measure of similarity between two vectors that measures the cosine of the angle between them. It is a popular metric for measuring similarity between two vectors.
