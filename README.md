@@ -55,6 +55,7 @@ One of the issues with euclidean distance is that it is not always accurate and 
 Hence, given two vectors, v and w the cosine similarity, cos(β) is defined as:
 
 $$ cosine\  similarity =\cos(\beta) = \frac{v \cdot w}{\left||v\right|| \left||w\right||}$$
+
 where ||v|| and ||w|| are the Euclidean norms of vectors v and w, and v · w is the dot product of vectors v and w. <br>Cosine similarity gives values between 0 and 1.
 <img src="images/cosine similarity between similar and dissimilar vector.JPG">
 
